@@ -104,4 +104,5 @@ Update-Database
 
 ```
 
+Migrations are only added once. Afterwards you just update the database using the above command.
 And now you are ready to steal as many cat pictures as you want!
