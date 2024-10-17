@@ -16,7 +16,7 @@ namespace StealAllTheCats.Client
 
         public async Task<List<CatClientModel>> GetCatImages()
         {
-            var response = await _httpClient.GetFromJsonAsync<List<CatClientModel>>($"https://api.thecatapi.com/v1/images/search?limit=20&api_key={_apiKey}");
+            var response = await _httpClient.GetFromJsonAsync<List<CatClientModel>>($"https://api.thecatapi.com/v1/images/search?limit=25&api_key={_apiKey}");
 
             if (response == null || response.Count == 0)
             {
