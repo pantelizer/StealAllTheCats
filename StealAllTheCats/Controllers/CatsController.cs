@@ -61,7 +61,7 @@ namespace StealAllTheCats.Controllers
 
             try
             {
-                var cat = await _stealTheCatService.GetCatById(id);
+                var cat = await _stealTheCatService.GetCatEntityById(id);
 
                 if (cat == null) return NotFound();
 

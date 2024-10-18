@@ -58,7 +58,7 @@ namespace StealTheCats.Tests
             foreach (string tag in arrayOfTemperaments)
             {
                 var trimmedString = tag.Trim();
-                await _service.AddTagToCat(catEntity, trimmedString);
+                await _service.AddTagToCatEntity(catEntity, trimmedString);
             }
 
             // Assert

@@ -44,7 +44,6 @@ namespace StealAllTheCats
             // Configure the HTTP request pipeline.
             if (app.Environment.IsDevelopment())
             {
-                //app.ApplyMigrations();
                 app.UseSwagger();
                 app.UseSwaggerUI();
             }

@@ -1,8 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
-using System.Text.Json.Serialization;
-
-namespace StealAllTheCats.Models
+﻿namespace StealAllTheCats.Models
 {
     public class CatEntity
     {

@@ -62,13 +62,13 @@ namespace StealAllTheCats.Services
                     foreach (string tagName in arrayOfTags)
                     {
                         var trimmedTag = tagName.Trim();
-                        await AddTagToCat(catEntity, trimmedTag);
+                        await AddTagToCatEntity(catEntity, trimmedTag);
                     }
                 }
             }
         }
 
-        public async Task AddTagToCat(CatEntity catEntity, string receivingTag)
+        public async Task AddTagToCatEntity(CatEntity catEntity, string receivingTag)
         {
             try
             {
@@ -96,7 +96,7 @@ namespace StealAllTheCats.Services
             return catIsInDb;
         }
 
-        public async Task<CatEntity> GetCatById(int id)
+        public async Task<CatEntity> GetCatEntityById(int id)
         {
             return await _dbcontext.Cats.Where(o => o.Id == id).Include(x => x.Tags).FirstOrDefaultAsync();
         }
